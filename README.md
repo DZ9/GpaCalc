@@ -1,2 +1,2 @@
 # GpaCalc
-A gpa calculator for neu.
+A gpa calculator for NEU.
