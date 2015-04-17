@@ -9,6 +9,7 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.http.Header;
 import org.apache.http.HttpHost;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.ClientProtocolException;
@@ -39,7 +40,9 @@ public class Calculation {
 	
 	public static void main (String[] args) {
 		CookieStore cookieStore = new BasicCookieStore();  
-		BasicClientCookie cookie = new BasicClientCookie("JSESSIONID", "Vu21aXIxK1woH8GlyK2RCb64YBGn0bmV3ogvxDfaFv7ZfcsdiF1L!-255119862");  
+//		BasicClientCookie cookie = new BasicClientCookie("JSESSIONID", "VwestiY0T9qf4KO6OWJ8b3UNqQk7Hnk6CLNMAu3e2VtffcAa6XiL!-255119862");  
+		BasicClientCookie cookie = new BasicClientCookie("JSESSIONID", "Vwk4jOQkWhnWDPiR1aDKDSCq8LcgAyYKthy8K9EqZ5hRurL76ZNE!-255119862");  
+//
 		cookie.setVersion(0);  
 		cookie.setDomain("202.118.31.197");  
 		cookie.setPath("/");  
@@ -58,9 +61,9 @@ public class Calculation {
 	         formparams.add(new BasicNameValuePair("WebUserNO", "20124743"));
 	         formparams
 	                 .add(new BasicNameValuePair("Password", "632601"));
-	         formparams.add(new BasicNameValuePair("Agnomen", "7kGR"));
-	         formparams.add(new BasicNameValuePair("submit.x", "43"));
-	         formparams.add(new BasicNameValuePair("submit.y", "7"));
+	         formparams.add(new BasicNameValuePair("Agnomen", "xz6D"));
+//	         formparams.add(new BasicNameValuePair("submit.x", "49"));
+//	         formparams.add(new BasicNameValuePair("submit.y", "12"));
 			entity = new UrlEncodedFormEntity(formparams,
 			         "UTF-8");
 			loginReq.setEntity(entity);
@@ -73,7 +76,12 @@ public class Calculation {
 		try {
 //			String result = null;
 			CloseableHttpResponse  response = client.execute(aaoHost, loginReq);
-
+//			Header[] headers = response.getAllHeaders();
+//			for(Header h:headers) {
+//				if(h.getName().equals("Set-Cookie")) {
+//					System.out.println(h.getValue());
+//				}
+//			}
 	        StringBuilder builder = new StringBuilder();
 	        BufferedReader br;
 			br = new BufferedReader(new InputStreamReader(
