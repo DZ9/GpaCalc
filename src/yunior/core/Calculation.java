@@ -1,7 +1,4 @@
-
-
-
-
+package yunior.core;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -27,6 +24,8 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+
+import yunior.model.Course;
 
 public class Calculation {
 	String loginRequestString = //登录请求链接

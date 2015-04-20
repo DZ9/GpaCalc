@@ -1,3 +1,4 @@
+package yunior.model;
 
 public class Course {
 	private String property;
