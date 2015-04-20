@@ -5,7 +5,7 @@ public class Course {
 	private String name;
 	private String type;
 	private String time;
-	private String credit;
+	private float credit;
 	private String scoreType;
 	private int score;
 	
@@ -39,10 +39,10 @@ public class Course {
 	public void setTime(String time) {
 		this.time = time;
 	}
-	public String getCredit() {
+	public float getCredit() {
 		return credit;
 	}
-	public void setCredit(String credit) {
+	public void setCredit(float credit) {
 		this.credit = credit;
 	}
 	public String getScoreType() {
